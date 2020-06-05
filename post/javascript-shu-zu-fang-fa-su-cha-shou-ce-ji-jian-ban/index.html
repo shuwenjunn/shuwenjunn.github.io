@@ -1,21 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://shuwenjunn.github.io</id>
-    <title>shu’s blog</title>
-    <updated>2020-06-05T06:59:41.589Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://shuwenjunn.github.io"/>
-    <link rel="self" href="https://shuwenjunn.github.io/atom.xml"/>
-    <logo>https://shuwenjunn.github.io/images/avatar.png</logo>
-    <icon>https://shuwenjunn.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, shu’s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[JavaScript数组方法速查手册极简版]]></title>
-        <id>https://shuwenjunn.github.io/post/javascript-shu-zu-fang-fa-su-cha-shou-ce-ji-jian-ban/</id>
-        <link href="https://shuwenjunn.github.io/post/javascript-shu-zu-fang-fa-su-cha-shou-ce-ji-jian-ban/">
-        </link>
-        <updated>2020-06-05T06:59:11.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="1-数组属性">1 数组属性</h2>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>JavaScript数组方法速查手册极简版 | shu’s blog</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://shuwenjunn.github.io/favicon.ico?v=1591340377389">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://shuwenjunn.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://shuwenjunn.github.io">
+        <img class="avatar" src="https://shuwenjunn.github.io/images/avatar.png?v=1591340377389" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://shuwenjunn.github.io">
+        <h1 class="site-title">shu’s blog</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">JavaScript数组方法速查手册极简版</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-06-05</span>
+            
+          </div>
+          <div class="post-content">
+            <h2 id="1-数组属性">1 数组属性</h2>
 <h3 id="11-length-长度属性">1.1 length-长度属性</h3>
 <p>每个数组都有一个length属性。针对稠密数组，length属性值代表数组中元素的个数。当数组是稀疏数组时，length属性值大于元素的个数。</p>
 <pre><code>var array1 = [ 'a', 'b', 'c' ];  
@@ -323,168 +400,91 @@ console.log(array1);    //输出 [ 1, 2, 3, 4, 5 ]
 <p>文中介绍的过于简单，想更多理解相关内容还是要多多动手实践！</p>
 <p>因时间不足，能力有限等原因，存在文字阐述不准及代码测试不足等诸多问题。如发现错误请不吝指正！谢谢。</p>
 <p>作者：毛瑞_三十课链接：https://juejin.im/post/5cc792666fb9a03239689682来源：掘金著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[JS作用域链的详解]]></title>
-        <id>https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/</id>
-        <link href="https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/">
-        </link>
-        <updated>2020-06-05T06:51:55.000Z</updated>
-        <summary type="html"><![CDATA[<p>JavaScript 作用域属于静态概念，根据词法结构来确定，而不是根据执行来确定。作用域链是 JavaScript 提供的一套解决标识符的访问机制—— JavaScript 规定每一个作用域都有一个与之相关联的作用域链。.....</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>JavaScript 作用域属于静态概念，根据词法结构来确定，而不是根据执行来确定。作用域链是 JavaScript 提供的一套解决标识符的访问机制—— JavaScript 规定每一个作用域都有一个与之相关联的作用域链。.....</p>
-<!-- more -->
-<p>作用域链用来在函数执行时求出标识符的值。该链中包含多个对象，在对标识符进行求值的过程中，会从链首的对象开始，然后依次查找后面的对象，直到在某个对象中找到与标识符名称相同的属性。如果在作用域链的顶端（全局对象）中仍然没有找到同名的属性，则返回 undefined 的属性值。</p>
-<p>在每个对象中进行属性查找的时候，还会使用该对象的原型域链（后续将会讲解原型链）。在一个执行上下文，与其关联的作用域链只会被 with 语句和 catch 子句影响。</p>
-<p>【实例1】在下面示例中，通过多层嵌套函数设计一个作用域链，在最内层函数中可以逐级访问外层函数的私有变量。</p>
-<pre><code class="language-javascript">var a = 1;  //全局变量
-(function () {
-    var b = 2;  //第1层局部变量
-    (function () {
-        var c = 3;  //第2层局部变量
-        (function () {
-            var d = 4;  //第3层局部变量
-            console.log(a + b + c + d);  //返回10
-        }) ()  //直接调用函数
-    }) ()  //直接调用函数
-}) ()  //直接调用函数
-</code></pre>
-<p>在上面代码中，JavaScript 引擎首先在最内层活动对象中查询属性 a、b、c 和 d，从中只找到了属性 d，并获得它的值（4）；然后沿着作用域链，在上一层活动对象中继续查找属性 a、b 和 c，从中找到了属性 c，获取它的值（3）······以此类推，直到找到所有需要的变量值为止，如图所示。</p>
-<figure data-type="image" tabindex="1"><img src="http://c.biancheng.net/uploads/allimg/190911/6-1Z91116302M18.gif" alt="img" loading="lazy"></figure>
-<p>下面结合一个示例，通过函数的创建和激活两个阶段来介绍作用域链的创建过程。</p>
-<h4 id="1-函数创建">1) 函数创建</h4>
-<p>函数的作用域在函数定义的时候就已经确定。每个函数都有一个内部属性 [[scope]]，当函数创建的时候，[[scope]] 保存所有父变量对象的引用，[[scope]] 就是一个层级链。注意，[[scope]] 并不代表完整的作用域链。例如：</p>
-<pre><code class="language-js">function f1() {
-    function f2() {
-        //...
-    }
-}
-</code></pre>
-<p>在函数创建时，每个函数的 [[scope]] 如下，其中 globalContext 表示全局上下文，VO 表示变量对象，f1Context 表示函数 f1 的上下文，AO 表示活动对象。</p>
-<pre><code class="language-js">f1.[[scope]] = [
-    globalContext.VO
-];
-f2.[[scope]] = [
-    f1Context.AO,
-    globalContext.VO
-];
-</code></pre>
-<h4 id="2-函数激活">2) 函数激活</h4>
-<p>当函数激活时，进入函数上下文，创建 VO/AO 后，就会将活动对象添加到作用域链的前端。这时如果命名执行上下文的作用域链为 Scope，则可以表示为：</p>
-<pre><code class="language-js">Scope = [AO].concat([[scope]]);
-</code></pre>
-<p>至此，作用域链创建完毕。</p>
-<p>【实例2】下面示例结合变量对象和执行上下文栈，总结函数执行上下文中作用域链和变量对象的创建过程。</p>
-<pre><code class="language-js">var g = &quot;global scope&quot;;  //全局变量
-function f() {  //声明函数
-    var 1 = 'local scope';  //私有变量
-    return 1;  //返回私有变量
-}
-f();  //调用函数
-</code></pre>
-<p>函数执行过程如下：</p>
-<ol>
-<li>f 函数被创建，保存作用域链到内部属性[[scope]]。</li>
-</ol>
-<pre><code class="language-js">f.[[scope]] = [  //当前函数的作用域链
-    globalContext.VO  //全局上下文的变量对象
-];
-</code></pre>
-<ol start="2">
-<li>执行 f 函数，创建 f 函数的执行上下文，f 函数的执行上下文被压入执行上下文栈。</li>
-</ol>
-<pre><code class="language-js">ECStack = [  //执行上下文栈
-    fContext,  //函数的执行上下文
-    globalContext  //全局上下文
-];
-</code></pre>
-<ol start="3">
-<li>f 函数并不立刻执行，开始准备工作。准备工作包括以下 3 项：<br>
-①复制函数 f 的 [[scope]] 属性，创建作用域链。</li>
-</ol>
-<pre><code class="language-js">fContext = {  //函数的执行上下文
-    Scope : f.[[scope]],  //把函数的作用域添加到函数的执行上下文
-}
-</code></pre>
-<p>②使用 arguments 创建活动对象，然后初始化活动对象，加入形参、声明函数、变量声明。</p>
-<pre><code class="language-js">fContext = {  //函数的执行上下文
-    AO : {  //函数的活动对象
-        arguments : {  //为活动对象添加arguments
-            length : 0
-        },
-        1 : undefined  //创建本地变量
-    }
-}
-</code></pre>
-<p>③将活动对象压入 f 作用域链顶端。</p>
-<pre><code class="language-js">fContext = {  //函数的执行上下文
-    AO : {  //活动对象
-        arguments : {  //参数集合
-            length : 0
-        },
-        1 : undefined  //本地变量
-    },
-    Scope : [AO, [[Scope]]]  //作用域链
-}
-</code></pre>
-<ol start="4">
-<li>准备工作做完，开始执行函数。随着函数的执行，修改 AO 的属性值。</li>
-</ol>
-<pre><code class="language-javascript">fContext = {  //函数的执行上下文
-    AO : {  //活动对象
-        arguments : {  //参数集合
-            length : 0
-        },  
-        1 : 'local scope'  //初始化本地变量
-    },
-    Scope : [AO, [[Scope]]]  //作用域链
-}
-</code></pre>
-<ol start="5">
-<li>
-<p>查找到本地变量 1 的值，然后返回 1 的值。</p>
-</li>
-<li>
-<p>函数执行完毕，函数上下文从执行上下文栈中弹出。</p>
-</li>
-</ol>
-<pre><code class="language-js">ECStack = [  //执行上下文栈
-    globalContext  //全局上下文
-];
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://shuwenjunn.github.io/post/hello-gridea/</id>
-        <link href="https://shuwenjunn.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-]]></content>
-    </entry>
-</feed>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/">
+              <h3 class="post-title">
+                下一篇：JS作用域链的详解
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/shuwenjunn" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://shuwenjunn.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'e6ddcf850618f2366146',
+        clientSecret: '5b53f0e3c5509ce7db0c1f1cd5e769b3f40a019c',
+        repo: 'shuwenjunn.github.io',
+        owner: 'shuwenjunn',
+        admin: ['shuwenjunn'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
