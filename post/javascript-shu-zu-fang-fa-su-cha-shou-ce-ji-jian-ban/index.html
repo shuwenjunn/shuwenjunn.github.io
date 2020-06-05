@@ -1,18 +1,16 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>JavaScript数组方法速查手册极简版 | shu’s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://shuwenjunn.github.io/favicon.ico?v=1591362889961">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://shuwenjunn.github.io/favicon.ico?v=1591362778324">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://shuwenjunn.github.io/styles/main.css">
 
@@ -23,76 +21,80 @@
 
   
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://shuwenjunn.github.io">
-        <img class="avatar" src="https://shuwenjunn.github.io/images/avatar.png?v=1591362778324" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://shuwenjunn.github.io">
-        <h1 class="site-title">shu’s blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://shuwenjunn.github.io">shu’s blog</a></h3>
   </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="menu purple-link">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">JavaScript数组方法速查手册极简版</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-06-05</span>
+          <li>
             
-          </div>
-          <div class="post-content">
-            <h2 id="1-数组属性">1 数组属性</h2>
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>JavaScript数组方法速查手册极简版</h1>
+            <p class="article-meta">
+              2020-06-05
+              
+            </p>
+            
+            <div class="post-content">
+              <h2 id="1-数组属性">1 数组属性</h2>
 <h3 id="11-length-长度属性">1.1 length-长度属性</h3>
 <p>每个数组都有一个length属性。针对稠密数组，length属性值代表数组中元素的个数。当数组是稀疏数组时，length属性值大于元素的个数。</p>
 <pre><code>var array1 = [ 'a', 'b', 'c' ];  
@@ -401,62 +403,109 @@ console.log(array1);    //输出 [ 1, 2, 3, 4, 5 ]
 <p>因时间不足，能力有限等原因，存在文字阐述不准及代码测试不足等诸多问题。如发现错误请不吝指正！谢谢。</p>
 <p>作者：毛瑞_三十课链接：https://juejin.im/post/5cc792666fb9a03239689682来源：掘金著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
-          </div>
+            </div>
+          </article>
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/">
-              <h3 class="post-title">
-                下一篇：JS作用域链的详解
-              </h3>
-            </a>
-          </div>
+        <div class="paper" data-aos="fade-in">
           
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/">
+                <h3 class="post-title">
+                  JS作用域链的详解
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+          
+            <div class="paper" data-aos="fade-in">
+              <div id="gitalk-container"></div>
+            </div>
+          
+
+          
+        
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://shuwenjunn.github.io/images/avatar.png?v=1591362889961" class="no-responsive avatar">
+    <div class="text-muted"></div>
+    <div class="social-container">
       
         
-          <div id="gitalk-container"></div>
-        
-
+      
         
       
-
-      <div class="site-footer">
-  <div class="slogan"></div>
-  <div class="social-container">
-    
+        
       
-        <a href="https://github.com/shuwenjunn" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        
       
-    
+        
       
-    
-      
-    
-      
-    
-      
-    
+    </div>
   </div>
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://shuwenjunn.github.io/atom.xml" target="_blank">RSS</a>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://shuwenjunn.github.io/post/javascript-shu-zu-fang-fa-su-cha-shou-ce-ji-jian-ban/">JavaScript数组方法速查手册极简版</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://shuwenjunn.github.io/post/js-zuo-yong-yu-lian-de-xiang-jie/">JS作用域链的详解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://shuwenjunn.github.io/post/about/">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://shuwenjunn.github.io/post/hello-gridea/">Hello Gridea</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://shuwenjunn.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
